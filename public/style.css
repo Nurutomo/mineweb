@@ -1,0 +1,196 @@
+:root {
+    --color-black: #000;
+    --color-dark-blue: #00A;
+    --color-dark-green: #0A0;
+    --color-dark-aqua: #0AA;
+    --color-dark-red: #A00;
+    --color-dark-purple: #A0A;
+    --color-gold: #FA0;
+    --color-gray: #AAA;
+    --color-dark-gray: #555;
+    --color-blue: #55F;
+    --color-green: #5F5;
+    --color-aqua: #5FF;
+    --color-red: #F55;
+    --color-light-purple: #F5F;
+    --color-yellow: #FF5;
+    --color-white: #FFF;
+}
+
+* {
+    font-family: minecraftia;
+    font-size: 12px;
+    color: var(--color-white);
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+div#chat {
+    left: 0.5em;
+    width: 200em;
+    max-height: 20.75em;
+    max-width: 50em;
+    position: absolute;
+    bottom: 2.5em;
+    padding: 0.25em 0;
+    white-space: pre-wrap;
+    overflow-y: auto;
+}
+
+input {
+    width: calc(100vw - 1.5em);
+    height: 1.5em;
+    background-color: #0008;
+    position: absolute;
+    left: 0.5em;
+    bottom: 0.25em;
+    padding: 0.25em;
+    border: none;
+    outline: none;
+    text-shadow: 0.125em 0.125em 0px #000A;
+}
+
+div#chat::-webkit-scrollbar {
+    width: 1px;
+}
+
+div#chat::-webkit-scrollbar-thumb {
+    background-color: #FFF4;
+}
+
+div#chat::-webkit-scrollbar-thumb:hover {
+    background-color: #FFF8;
+}
+
+div#chat::-webkit-scrollbar-track {
+    background-color: #0004;
+}
+
+span {
+    color: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: inherit;
+    text-shadow: 0.125em 0.125em 0px #000A;
+}
+
+div#chat > span {
+    margin-top: 0;
+    display: inline-block;
+    min-width: 50em;
+    background-color: #000A;
+    transition: all 1s ease-out;
+}
+
+span[alt] {
+    cursor: default;
+}
+
+span[data-click] {
+    cursor: pointer;
+}
+
+span.alt {
+    z-index: 1;
+    padding: 0.25em 0.5em;
+    position: absolute;
+    text-transform: none;
+    background-color: var(--color-black);
+    border: 0.125em solid var(--color-purple);
+    border-radius: 0.25em;
+    white-space: pre;
+}
+
+.reset {
+    color: initial;
+    font-weight: initial;
+    font-style: initial;
+    text-decoration: initial;
+}
+
+.black {
+    color: var(--color-black, white);
+}
+
+.dark_blue {
+    color: var(--color-dark-blue, white);
+}
+
+.dark_green {
+    color: var(--color-dark-green, white);
+}
+
+.dark_aqua {
+    color: var(--color-dark-aqua, white);
+}
+
+.dark_red {
+    color: var(--color-dark-red, white);
+}
+
+.dark_purple {
+    color: var(--color-dark-purple, white);
+}
+
+.gold {
+    color: var(--color-gold, white);
+}
+
+.gray {
+    color: var(--color-gray, white);
+}
+
+.dark_gray {
+    color: var(--color-dark-gray, white);
+}
+
+.blue {
+    color: var(--color-blue, white);
+}
+
+.green {
+    color: var(--color-green, white);
+}
+
+.aqua {
+    color: var(--color-aqua, white);
+}
+
+.red {
+    color: var(--color-red, white);
+}
+
+.light_purple {
+    color: var(--color-light-purple, white);
+}
+
+.yellow {
+    color: var(--color-yellow, white);
+}
+
+.white {
+    color: var(--color-white, white);
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.underlined.strikethrough {
+    text-decoration: underline, line-through;
+}

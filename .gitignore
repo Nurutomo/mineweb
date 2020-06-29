@@ -1,3 +1,8 @@
+public/minecraft
+node_modules_t/
+run.bat
+.env
+
 # Logs
 logs
 *.log
